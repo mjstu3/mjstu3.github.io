@@ -1,0 +1,434 @@
+body, html {
+	font-family: 'Roboto', sans-serif;
+	color: #5a5a5a;
+    padding-top: 45px;
+}
+
+@font-face {
+    font-family: 'Hansief';
+    src: url(../fonts/Hansief.otf);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Hansief';
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+h2{
+    color: gray;
+}
+
+h3{
+    margin-top: 12px;
+    color: white;
+    font-size: 18pt;
+}
+
+h4{
+    font-size: 22pt;
+    color: darkslategray;
+}
+
+h5{
+    font-size: 18pt;
+    color: gray;
+}
+
+h6{
+    font-size: 18pt;
+    color: darkgray;
+}
+
+#logo {
+    height: 120px;
+    width: 0px;
+    transition: all 0.5s;
+}
+
+#logo .logo-box {
+    position: absolute;
+    transition: all 0.5s;
+}
+
+#logo .overlay:hover {
+    opacity: 0;
+}
+
+#logo .logo-img {
+    height: 120px;
+    transition: all 0.5s;
+}
+
+#navigation {
+    padding: 10px;
+	transition: all 0.5s;
+}
+
+#navigation.navbar-inverse {
+    background: url(../img/pexels-steve-johnson-1070527-banner2.jpg);
+    border-bottom-color: red;
+    border-bottom-width: thick;
+}
+
+#navigation.navbar-inverse .navbar-nav {
+    transition: all 0.5s;
+}
+
+#navigation.navbar-inverse .navbar-nav > li > a {
+	text-transform: uppercase;
+	color: white;
+	font-size: 20px;
+    font-family: 'Hansief Regular';
+    transition: all 0.5s;
+}
+
+#burger,
+#burger:hover,
+#burger:checked {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+#burger .icon-bar {
+    width: 67px;
+    padding: 4px;
+    margin: 10px;
+    transition: all 0.2s;
+}
+
+#burger .top-bar {
+    -webkit-transform: translateY(18px);
+    -ms-transform: translateY(18px);
+    -o-transform: translateY(18px);
+    transform: translateY(18px);
+}
+#burger .bottom-bar {
+    -webkit-transform: translateY(-18px);
+    -ms-transform: translateY(-18px);
+    -o-transform: translateY(-18px);
+    transform: translateY(-18px);
+}
+
+#burger.collapsed .top-bar {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+#burger.collapsed .bottom-bar {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+
+#links > ul > li > a {
+    transition: all 0.5s;
+}
+
+#links > ul > li > a:hover,
+#links > ul > li > a:focus {
+    color: red !important;
+}
+
+#splitheader {
+    background-color: gray;
+    height: 50px;
+    text-align: center;
+}
+
+#splitheader > a:hover {
+    text-decoration: none;
+}
+
+#splitheader > a:hover > h3 {
+    color: lightgray;
+}
+
+#carousel {
+    max-height: 750px;
+}
+
+#carousel > div > div.item > img {
+    width: 100%;
+    max-height: 750px;
+    object-fit: cover;
+}
+
+#carousel .carousel-control {
+    transition: all 0.5s;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.grid-item {
+    position: relative;
+    padding: 20px;
+    text-align: left;
+}
+
+.grid-item > a > img {
+    width: 100%;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.grid-item > a:hover {
+    text-decoration: none;
+}
+
+.grid-item > a:hover > img {
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.grid-item > a > h1 {
+    position: absolute;
+    bottom: 60px;
+    left: 30px;
+}
+
+.grid-item > a > h5 {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+}
+
+.grid-item > a > h6 {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+
+.grid-item > a > p {
+    color: gray;
+    transition: all 0.5s;
+}
+
+.grid-item > a:hover > h4 {
+    color: black;
+}
+
+.grid-item > a:hover > p {
+    color: darkslategray;
+}
+
+#youtube {
+    background-color: black;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+}
+
+
+#youtube > iframe {
+    position: absolute;
+    top:0;
+    width: 98%;
+    height: 100%;
+}
+
+#advert {
+    text-align: center;
+    background-color: lightgray;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#connect {
+    text-align: center;
+}
+
+#social {
+    padding: 25px;
+}
+
+#social > a > i {
+    font-size: 48px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.5s;
+}
+
+#social > a > i:hover {
+    color: red;
+}
+
+#subscribe {
+    padding: 25px;
+    vertical-align: middle;
+}
+
+#email {
+    height: 50px;
+    width: 70%;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 0px;
+    padding-left: 5px;
+    font-size: 12pt;
+}
+
+#submit {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-color: red;
+    padding: 0px 10px 0px 10px;
+    font-size: 18pt;
+    margin-bottom: 4px;
+    border-radius: 0px;
+}
+
+#footer {
+    text-align: center;
+    background-color: lightgray;
+    padding: 15px;
+    height: auto;
+}
+
+#footer > h6 {
+    font-size: 14pt;
+}
+
+#footer > h6 > a {
+    color: grey;
+    transition: all 0.5s;
+}
+
+#footer > h6 > a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width:1200px) {
+    #logo {
+        margin-left: 300px;
+    }
+    
+    #logo.compressed {
+        height: 60px;
+    }
+    
+    #logo .logo-img.compressed {
+        height: 60px;
+    }
+
+    #navigation.navbar-inverse .navbar-nav {
+        padding-right: 300px;
+    }
+    
+    #navigation.navbar-inverse .navbar-nav.compressed {
+        padding-top: 5px;
+    }
+    
+    #youtube {
+        padding-bottom: 30%;
+    }   
+    
+    #advert {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+    
+    #connect {
+        height: 100px;
+        background: url(../img/pexels-steve-johnson-1070527-banner1.jpg);
+    }
+    
+    #social {
+        height: 100%;
+        width: 50%;
+    }
+    
+    #subscribe {
+        height: 100%;
+        width: 50%;
+    }
+}
+
+@media (min-width:1100px) and (max-width:1499px) {
+    #logo {
+        margin-left: 100px;
+    }
+    
+    #navigation.navbar-inverse .navbar-nav {
+        padding-right: 100px;
+    }
+}
+
+@media (max-width:1200px) {
+    #youtube {
+        padding-bottom: 50%;
+    }   
+    
+    #advert {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    #connect {
+        height: 200px;
+        background: url(../img/pexels-steve-johnson-1070527-banner1.jpg);
+    }
+    
+    #social {
+        height: 50%;
+        width: 100%;
+    }
+    
+    #subscribe {
+        height: 50%;
+        width: 100%;
+    }
+}
+
+@media (min-width:768px) {
+    #navigation.navbar-inverse .navbar-nav {
+        padding-top: 35px;
+    }
+}
+
+@media (max-width:767px) {
+    #logo {
+        position: absolute;
+    }
+    
+    #logo .logo-img {
+        height: 100px;
+    }
+    
+    #social > a > i{
+        font-size: 26px;
+    }
+    
+    #email {
+        width: 75%;
+        font-size: 8pt;
+    }
+    
+    #footer > h6 {
+        font-size: 10pt;
+    }
+}
+
+@media (min-width:992px) {
+    .grid-container {
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+}
+
+@media (max-width:991px) {
+    .grid-container {
+        grid-template-columns: 100%;
+    }
+}
+
