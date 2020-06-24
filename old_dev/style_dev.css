@@ -1,0 +1,290 @@
+* { box-sizing: border-box; }
+body {
+  font: 16px Arial;
+	transition: all 0.2s;
+}
+
+h6 {
+	margin-top: 10px !important;
+	margin-bottom: 5px !important;
+}
+
+.left-sidebar {
+	position: fixed !important;
+	overflow-y: hidden;
+}
+
+/* 17, 17, 14 */
+@media only screen and (min-width: 768px) {
+	h6, .btn-select, .btn-submit, .autocomplete-node {
+		font-size: 0.75vw !important;
+	}
+  .header-button, .split-button, .sub-button {
+    font-size: 0.85vw; /*17px*/
+  }
+	.sub-content {
+		font-size: 0.75vw;
+	}
+	#c1 {
+		margin-bottom: 7vh;
+		margin-left: 10vh;
+	}
+	#c2 {
+		position: fixed;
+		display: block;
+		padding: 0 50px;
+		left: 50%;
+		height: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+  h6, .btn-select, .btn-submit, .autocomplete-node {
+		font-size: 2.1vw !important;
+	}
+	.header-button, .split-button, .sub-button {
+    font-size: 2.3vw;
+  }
+	.sub-content {
+		font-size: 2.2vw;
+	}
+	#c1 {
+		margin-bottom: 25px;
+	}
+	#c2 {
+		display: none;
+		padding: 0;
+		left: 0;
+	}
+}
+
+.button-all {
+	width: 100%;
+	outline: none;
+	border: none;
+	text-align: left;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.header-button {
+	border-left: 4px solid;
+	border-left-color: transparent;
+  background-color: #E8E8E8;
+  color: black;
+  padding: 12px;
+	max-height: 12vw;
+}
+
+.header-collapsible.active {
+  background-color: #CCC;
+	border-left: 4px solid;
+	border-left-color: #007bff;
+}
+
+.header-button:hover, .header-button:focus {
+	background-color: #C5C5C5;
+	outline: none;
+}
+
+.split-button {
+	border-left: 2px solid;
+	border-left-color: transparent;
+  background-color: #F5F5F5;
+  padding: 6px 12px;
+}
+
+.split-collapsible.active {
+  background-color: #DDD;
+	border-left: 2px solid;
+	border-left-color: #007bff;
+}
+
+.split-button:hover, .split-button:focus {
+	background-color: #D5D5D5;
+	outline: none;
+}
+
+.sub-button {
+	border-left: 2px solid;
+	border-left-color: transparent;
+	background-color: #F5F5F5;
+	padding: 6px 12px;
+}
+
+.sub-collapsible.active {
+	background-color: #E3E3E3;
+	border-left: 2px solid;
+	border-left-color: #007bff;
+}
+
+.sub-button:hover, .sub-button:focus {
+	background-color: #E7E7E7;
+	outline: none;
+}
+
+.content-all {
+  background-color: #F5F5F5;
+  overflow: hidden;
+	max-height: 0;
+  transition: all 0.2s;
+	width: 100%;
+}
+
+.header-content {
+	padding: 0 8px;
+	border-style: solid;
+	border-width: 0;
+	border-bottom-width: thin;
+	border-bottom-color: #999;
+}
+
+.split-content {
+	padding: 0 8px;
+	border-bottom: 1px solid;
+	border-bottom-color: #CCC;
+}
+
+.sub-content {
+	padding: 0 20px;
+	border-bottom: 1px solid;
+	border-bottom-color: #E5E5E5;
+}
+
+.row {
+	margin-top: 30px !important;
+}
+
+.text-link {
+	color: #007bff !important;
+}
+
+.text-link:hover {
+	color: blue !important;
+	text-decoration: underline !important;
+	cursor: pointer !important;
+}
+
+.right-icon {
+	float: right;
+	text-align: center;
+	width: 20px;
+	color: #555;
+}
+
+.right-icon .fa-chevron-down {
+  transition: all 0.2s ease;
+}
+
+.active .right-icon .fa-chevron-down {
+  transform: rotate(180deg);
+}
+
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+	width: 75%;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #F5F5F5;
+  padding: 10px;
+  font-size: 0.8vw !important;
+}
+
+input[type=text] {
+  background-color: #F5F5F5;
+  width: 100%;
+	height: 45px;
+}
+
+.btn-submit {
+	height: 45px;
+	margin-top: -3px;
+	margin-left: 10px;
+}
+
+#occSubmit {
+	position: absolute;
+	right: 5%;
+	top: 33px;
+}
+
+.anzsco-autocomplete {
+	width: 85% !important;
+}
+
+.disabled {
+  opacity: 0.4 !important;
+  cursor: not-allowed !important;
+}
+
+.side-panel {
+	margin-top: 100px;
+  height: 80vh; 
+  width: 0px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.8); 
+  overflow: hidden; 
+	padding: 0px;
+  padding-top: 30px; 
+  transition: all 0.5s; 
+}
+
+.side-btn {
+	border: none;
+  background-color: rgba(0,0,0,0.8); 
+	color: white;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.side-btn .fa-chevron-right {
+	transition: all 0.2s ease;
+}
+
+.active .side-btn .fa-chevron-right {
+  transform: rotate(180deg);
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+	max-height: 85vh;
+	overflow-y: auto;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.anzsco-autocomplete-items {
+	max-height: 70vh;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: #007bff !important;
+  color: #ffffff;
+}
