@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>HRAAF 2019</title>
+
+        <link rel="icon" href="img/icon.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav id="navigation" class="navbar navbar-inverse navbar-fixed-top ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div id="logo" class="container">
+                        <div class="logo-box">
+                            <a href="index.html"><img class="logo-img" src="img/hraff-logo-4.png" alt="2018.hraff.org.au"></a>
+                        </div>
+                        <div class="logo-box overlay">
+                            <a href="index.html"><img class="logo-img" src="img/hraff-logo-2.png" alt="2018.hraff.org.au"></a>
+                        </div>
+                    </div>
+                    
+                    <button type="button" id="burger" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#links" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right" id="links">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Program</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#" style="padding-right: 50px">Contact Us</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>        
+
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/hraff-banner2.jpg" class="carousel-img" alt="2018.hraff.org.au"> 
+                </div>
+                <div class="item">
+                    <img src="img/pexels-scott-webb-63952.jpg" class="carousel-img" alt="https://www.pexels.com/photo/yellow-green-and-blue-brick-wall-63952/"> 
+                </div>
+                <div class="item">
+                    <img src="img/pexels-stefan-stefancik-42157-banner.jpg" class="carousel-img" alt="https://www.pexels.com/photo/abandoned-boy-skate-skater-42157/"> 
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        
+        <div id="splitheader" class="container-fluid">
+            <a href="#"><h3>Events</h3></a>
+        </div>
+        
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="#">
+                    <img src="img/pexels-ghost-presenter-669319.jpg" alt="https://www.pexels.com/photo/greyscale-photo-of-masks-on-a-stick-669319/"> 
+                    <h1 style="color: red">Faces</h1>
+                    <h5 style="color: white">Film: Abstract</h5>
+                    <h6 style="color: white">03/05/19 - Melbourne</h6>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="#">
+                    <img src="img/pexels-pete-johnson-959058.jpg" alt="https://www.pexels.com/photo/woman-sitting-in-front-of-monk-959058/"> 
+                    <h1 style="color: orange">Cambodia</h1>
+                    <h5 style="color: white">Art</h5>
+                    <h6 style="color: white">30/05/19 - Canberra</h6>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="#">
+                    <img src="img/pexels-artem-saranin-1055845.jpg" alt="https://www.pexels.com/photo/person-wearing-jacket-walking-on-tunnel-with-red-and-green-lights-1055845/"> 
+                    <h1 style="color: red">Tunnel Vision</h1>
+                    <h5 style="color: white">Film: True story</h5>
+                    <h6 style="color: white">08/05/19 - Melbourne</h6>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="#">
+                    <img src="img/pexels-art-by-lonfeldt-935785.jpg" alt="https://www.pexels.com/photo/multicolored-abstract-painting-935785/"> 
+                    <h1 style="color: darkblue">Dispersion</h1>
+                    <h5 style="color: black">Art</h5>
+                    <h6 style="color: black">20/05/19 - Launceston</h6>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="#">
+                    <img src="img/pexels-picography-4776.jpg" alt="https://www.pexels.com/photo/art-graffiti-illustration-man-4776/"> 
+                    <h1 style="color: gold">King</h1>
+                    <h5 style="color: white">Art</h5>
+                    <h6 style="color: white">13/05/19 - Melbourne</h6>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="#">
+                    <img src="img/pexels-rawpixel-1251175.jpg" alt="https://www.pexels.com/photo/six-white-ceramic-mugs-1251175/"> 
+                    <h1 style="color: darkgoldenrod">Bean</h1>
+                    <h5 style="color: white">Film: Documentary</h5>
+                    <h6 style="color: white">12/05/19 - Melbourne</h6>
+                </a>
+            </div>
+        </div>
+        
+        <div id="splitheader" class="container-fluid">
+            <a href="#"><h3>Latest News</h3></a>
+        </div>
+        
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="#">
+                    <img src="img/hraff-news1.jpg" alt="2018.hraff.org.au"> 
+                    <h4>HRAFF has been named the top festival to attend by FlightNetwork Australia</h4>
+                    <p>“There’s nothing that captivates quite like the power of film” – FlightNetwork </p>  
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="#">
+                    <img src="img/hraff-news2.jpg" alt="2018.hraff.org.au"> 
+                    <h4>Guilty: The last 72 hours of Myuran Sukumaran's life</h4>
+                    <p>“Well, I haven’t finish processing yet, it was very intense, which it was meant to be. It's obvious what it is, it’s a film about death penalty, as much as it is about individual story.” – Audience Member</p>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="#">
+                    <img src="img/hraff-news3.jpg" alt="2018.hraff.org.au"> 
+                    <h4>HRAFF 2018 Opening Night Wrap Up</h4>
+                    <p>Festival Correspondent Meg Hill gives her wrap up on Opening Night</p>
+                </a>  
+            </div>
+        </div>
+        
+        <div id="splitheader" class="container-fluid">
+            <a href="#"><h3>Promotions</h3></a>
+        </div>
+        
+        <div id="youtube" class="container-fluid">
+            <iframe src="https://www.youtube.com/embed/jjzLrIdTWmc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        
+        <div id="advert" class="container-fluid">
+            <div id="ad-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/banner1.png" class="carousel-img" alt="2018.hraff.org.au"> 
+                    </div>
+                    <div class="item">
+                        <img src="img/banner2.png" class="carousel-img" alt="2018.hraff.org.au"> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="connect" class="container-fluid">
+            <div id="social" class="col-md-6">
+                <a href="https://www.facebook.com/humanrightsfest/"><i class="fa fa-facebook-official"></i></a>
+                <a href="https://twitter.com/humanrightsfest?lang=en"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.youtube.com/user/HraffTV"><i class="fa fa-youtube"></i></a>
+                <a href="https://plus.google.com/b/117304435946196297049/117304435946196297049/posts?pageId=117304435946196297049"><i class="fa fa-google-plus"></i></a>
+                <a href="https://instagram.com/humanrightsfest/"><i class="fa fa-instagram"></i></a>
+            </div>
+            <div id="subscribe" class="col-md-6">
+                <input type="email" id="email" name="email" placeholder="Enter email to subscribe to our newsletter">
+                <a href="index.html"><button id="submit" class="btn btn-primary"><i class="fa fa-send"></i></button></a>
+            </div>
+        </div>
+        
+        <div id="footer" class="container-fluid">
+            <h6><a href="#" >Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" >Privacy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" >Terms & Conditions</a></h6>
+            <h6>© 2019 HRAFF - Human Rights Arts & Film Festival - hraff.org.au</h6> 
+        </div>
+
+        <script>
+            $("#carousel").carousel();
+            
+            $(document).ready(function() {
+                $(window).on("scroll", function() {
+                    if ($(window).scrollTop() >= 300) {
+                        $("#logo").addClass("compressed");
+                        $("#logo .logo-img").addClass("compressed");
+                        $("#navigation.navbar-inverse .navbar-nav").addClass("compressed");
+                    } else {
+                        $("#logo").removeClass("compressed");
+                        $("#logo .logo-img").removeClass("compressed");
+                        $("#navigation.navbar-inverse .navbar-nav").removeClass("compressed");
+                    }
+                });
+            });
+        </script>
+
+    </body>
+</html>

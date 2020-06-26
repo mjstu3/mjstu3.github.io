@@ -29,8 +29,8 @@ h3{
 }
 
 h4{
-    font-size: 22pt;
-    color: darkslategray;
+    font-size: 26pt;
+    color: rgba(255,255,255,0.5);
 }
 
 h5{
@@ -47,8 +47,23 @@ h6{
     margin: 0 !important;
 }
 
+.main-container {
+    padding: 0 20vh;
+}
+
+.name-container {
+    width: 100%;
+    height: 5vh;
+    margin-top: 18vh;
+    text-align: center;
+    font-size: 2vh;
+    letter-spacing: 8px;
+    word-spacing: 8px;
+    font-family: 'Hansief'
+}
+
 .grid-container {
-    margin: 30vh 0;
+    margin-top: 4vh;
     display: grid;
     height: 38vh;
     width: 100%
@@ -190,7 +205,7 @@ h6{
 
 @media (min-width:992px) {
     .grid-container {
-        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-columns: 50% 50%;
     }
 }
 
