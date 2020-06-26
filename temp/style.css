@@ -1,0 +1,202 @@
+body, html {
+	font-family: 'Roboto', sans-serif;
+	color: #5a5a5a;
+    background-image: url(abstract.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+@font-face {
+    font-family: 'Hansief';
+    src: url(../fonts/Hansief.otf);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Hansief';
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+h2{
+    color: gray;
+}
+
+h3{
+    margin-top: 12px;
+    color: white;
+    font-size: 18pt;
+}
+
+h4{
+    font-size: 22pt;
+    color: darkslategray;
+}
+
+h5{
+    font-size: 18pt;
+    color: gray;
+}
+
+h6{
+    font-size: 18pt;
+    color: darkgray;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+.grid-container {
+    margin: 30vh 0;
+    display: grid;
+    height: 38vh;
+    width: 100%
+}
+
+.grid-item {
+    position: relative;
+    padding: 20px;
+    text-align: left;
+}
+
+.grid-item > a > img {
+    width: 100%;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.grid-item > a:hover {
+    text-decoration: none;
+}
+
+.grid-item > a:hover > img {
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+@media (min-width:1200px) {
+    #logo {
+        margin-left: 300px;
+    }
+    
+    #logo.compressed {
+        height: 60px;
+    }
+    
+    #logo .logo-img.compressed {
+        height: 60px;
+    }
+
+    #navigation.navbar-inverse .navbar-nav {
+        padding-right: 300px;
+    }
+    
+    #navigation.navbar-inverse .navbar-nav.compressed {
+        padding-top: 5px;
+    }
+    
+    #youtube {
+        padding-bottom: 30%;
+    }   
+    
+    #advert {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+    
+    #connect {
+        height: 100px;
+        background: url(../img/pexels-steve-johnson-1070527-banner1.jpg);
+    }
+    
+    #social {
+        height: 100%;
+        width: 50%;
+    }
+    
+    #subscribe {
+        height: 100%;
+        width: 50%;
+    }
+}
+
+@media (min-width:1100px) and (max-width:1499px) {
+    #logo {
+        margin-left: 100px;
+    }
+    
+    #navigation.navbar-inverse .navbar-nav {
+        padding-right: 100px;
+    }
+}
+
+@media (max-width:1200px) {
+    #youtube {
+        padding-bottom: 50%;
+    }   
+    
+    #advert {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    #connect {
+        height: 200px;
+        background: url(../img/pexels-steve-johnson-1070527-banner1.jpg);
+    }
+    
+    #social {
+        height: 50%;
+        width: 100%;
+    }
+    
+    #subscribe {
+        height: 50%;
+        width: 100%;
+    }
+}
+
+@media (min-width:768px) {
+    #navigation.navbar-inverse .navbar-nav {
+        padding-top: 35px;
+    }
+}
+
+@media (max-width:767px) {
+    #logo {
+        position: absolute;
+    }
+    
+    #logo .logo-img {
+        height: 100px;
+    }
+    
+    #social > a > i{
+        font-size: 26px;
+    }
+    
+    #email {
+        width: 75%;
+        font-size: 8pt;
+    }
+    
+    #footer > h6 {
+        font-size: 10pt;
+    }
+}
+
+@media (min-width:992px) {
+    .grid-container {
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+}
+
+@media (max-width:991px) {
+    .grid-container {
+        grid-template-columns: 100%;
+    }
+}
+
