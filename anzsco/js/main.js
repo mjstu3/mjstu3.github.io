@@ -82,3 +82,5 @@ function menuOpen(i) {
 		
 	
 }
+
+hidePreloader();
